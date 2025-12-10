@@ -245,12 +245,12 @@ const Whitepaper: React.FC<WhitepaperProps> = ({ onBack }) => {
             className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group"
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-            <span className="font-display font-bold text-sm tracking-widest uppercase">Return to Simulation</span>
+            <span className="font-display font-bold text-sm tracking-widest uppercase">Return to Home Page</span>
           </button>
           
           <div className="flex items-center gap-2 opacity-80">
             <BookOpen className="w-5 h-5 text-fuchsia-500" />
-            <span className="text-white font-display font-bold tracking-widest">ARCHIVES</span>
+            <span className="text-white font-display font-bold tracking-widest">WHITE PAPER</span>
           </div>
         </div>
       </nav>
@@ -277,7 +277,7 @@ const Whitepaper: React.FC<WhitepaperProps> = ({ onBack }) => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
+              transition={{ duration: 0.5, delay: index * 0.02 }}
               className="relative"
             >
               {/* Decoration Line */}
@@ -305,7 +305,7 @@ const Whitepaper: React.FC<WhitepaperProps> = ({ onBack }) => {
             onClick={onBack}
             className="px-8 py-4 bg-transparent border border-purple-500/30 hover:border-fuchsia-500 text-purple-300 hover:text-white transition-all font-display font-bold uppercase tracking-widest"
           >
-            Close Archives
+            Close White Paper
           </button>
         </div>
 

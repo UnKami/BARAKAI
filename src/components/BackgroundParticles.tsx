@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const BackgroundParticles: React.FC = () => {
   // Generate random positions for stars
-  const stars = Array.from({ length: 30 }).map((_, i) => ({
+  const stars = Array.from({ length: 250 }).map((_, i) => ({
     id: i,
     top: `${Math.random() * 100}%`,
     left: `${Math.random() * 100}%`,

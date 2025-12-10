@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ onReadWhitepaper }) => {
         
         <div className="text-center md:text-left space-y-2">
           <h3 className="text-3xl font-display font-bold text-white tracking-widest">BARAKAI</h3>
-          <p className="text-gray-500 text-sm font-medium">© 2024 Barakai Project. Built for the infinite.</p>
+          <p className="text-gray-500 text-sm font-medium">© 2025 Barakai Project. The Infinite IP Factory.</p>
         </div>
 
         <div className="flex gap-8">
@@ -37,8 +37,8 @@ const Footer: React.FC<FooterProps> = ({ onReadWhitepaper }) => {
       
       <div className="mt-12 pt-8 border-t border-purple-900/10 text-center">
         <div className="flex justify-center space-x-6 text-xs text-gray-600 uppercase tracking-widest">
-            <a href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-purple-400 transition-colors">Terms of Service</a>
+            {/* <a href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-purple-400 transition-colors">Terms of Service</a> */}
             <button 
               onClick={onReadWhitepaper}
               className="hover:text-purple-400 transition-colors uppercase"

@@ -10,7 +10,7 @@ interface FeatureSectionProps {
 
 const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = false }) => {
   return (
-    <section className="relative py-24 px-4 md:px-8 max-w-7xl mx-auto flex flex-col justify-center min-h-[80vh]">
+    <section className="relative lg:py-10 px-4 md:px-8 max-w-7xl mx-auto flex flex-col justify-center min-h-[50vh]">
       
       {/* Background Number Watermark */}
       <div className="absolute top-0 md:top-10 left-4 md:left-0 text-[8rem] md:text-[14rem] font-bold font-display text-white opacity-[0.02] select-none pointer-events-none z-0 leading-none">
@@ -80,7 +80,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = fals
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <GlowCard intensity="high" noPadding className="w-full aspect-[4/3] md:aspect-video transform hover:scale-[1.02] transition-transform duration-500">
+          <GlowCard intensity="high" noPadding className="w-full aspect-[4/3] md:aspect-video transform hover:scale-[1.25]  transition-transform duration-500">
             <div className="relative w-full h-full overflow-hidden rounded-md group">
                {/* Image Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f0518] via-transparent to-transparent opacity-60 z-10" />
@@ -88,7 +88,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = fals
               <img 
                 src={data.visualSrc} 
                 alt={data.visualAlt}
-                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 saturate-[0.8] group-hover:saturate-100"
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-100 saturate-[0.8] group-hover:saturate-100"
               />
               
               {/* UI Overlay Simulation */}

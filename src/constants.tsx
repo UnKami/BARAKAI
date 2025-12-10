@@ -43,6 +43,33 @@ export const SECTIONS: SectionData[] = [
       }
     ]
   },
+  //   {
+  //   id: 'foundation',
+  //   stepNumber: 2,
+  //   headline: 'DISCOVER YOUR LEGEND',
+  //   subText: 'Origin Story Generation',
+  //   description: 'Your journey is bound to a single, procedurally generated protagonist. Their identity is a distinct mystery tailored to your specific playthrough.',
+  //   visualSrc: 'https://i.ibb.co/xWd6szW/Generated-Image-December-07-2025-10-33-PM.jpg',
+  //   visualAlt: 'Floating Island Base',
+  //   colorTheme: 'fuchsia',
+  //   features: [
+  //     {
+  //       title: 'Inherit',
+  //       description: 'Receive a one-of-a-kind, generated character as your avatar.',
+  //       icon: <Hammer className="w-5 h-5" />
+  //     },
+  //     {
+  //       title: 'Reveal',
+  //       description: 'Unlock chapters of a unique origin story explaining their past.',
+  //       icon: <Dumbbell className="w-5 h-5" />
+  //     },
+  //     {
+  //       title: 'Immerse',
+  //       description: `Experience a narrative that restores the hero's lost identity.`,
+  //       icon: <Users className="w-5 h-5" />
+  //     }
+  //   ]
+  // },
   {
     id: 'climb',
     stepNumber: 2,
