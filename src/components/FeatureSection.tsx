@@ -50,7 +50,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = fals
             {data.features.map((feature, idx) => (
               <motion.div 
                 key={idx}
-                className="flex items-start p-4 rounded-lg bg-purple-900/10 border border-purple-500/10 hover:bg-purple-900/20 hover:border-purple-500/30 transition-all duration-300"
+                className="flex items-start p-4 rounded-lg bg-purple-900/25 border border-purple-500/10 hover:bg-purple-900/40 hover:border-purple-500/30 transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
