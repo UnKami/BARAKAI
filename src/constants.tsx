@@ -12,10 +12,40 @@ import {
   Sparkles, 
   Store, 
   BookCopy, 
-  Coins 
+  Coins, 
+  Compass,
+  Cloud,
+  Layers
 } from 'lucide-react';
 
 export const SECTIONS: SectionData[] = [
+  {
+    id: 'cosmos',
+    stepNumber: 0,
+    headline: 'BARAKAI:\nTHE BEGINNING',
+    subText: 'ENDLESS WORLDS, ONE TOWER',
+    description: 'In the world of BARAKAI, a colossal Tower stands at the center of everything. Orbiting this endless structure are millions of floating islands, each a sovereign territory where a character’s path begins.',
+    visualSrc: 'https://firebasestorage.googleapis.com/v0/b/electric-5c719.firebasestorage.app/o/Pictures%2FGenerated-Image-December-25-2025-12-56-PM-1.jpg?alt=media&token=a64bcda7-6dbc-4bc8-8445-aff8f3741617',
+    visualAlt: 'The Colossal Tower of Barakai',
+    colorTheme: 'cyan',
+    features: [
+      {
+        title: 'THE INFINITE TOWER',
+        description: 'A vertical labyrinth where every floor is a bespoke, AI-generated battlefield.',
+        icon: <Layers className="w-5 h-5" />
+      },
+      {
+        title: 'ORBITING HAVENS',
+        description: 'Millions of drifting islands, each home to a hero with a wiped memory.',
+        icon: <Cloud className="w-5 h-5" />
+      },
+      {
+        title: 'BESPOKE DESTINIES',
+        description: 'Endless floors to conquer and endless characters to awaken across the void.',
+        icon: <Compass className="w-5 h-5" />
+      }
+    ]
+  },
   {
     id: 'foundation',
     stepNumber: 1,
