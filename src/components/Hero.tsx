@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Play } from 'lucide-react';
+import { ChevronDown, Play, FileText, BookOpen } from 'lucide-react';
 
 interface HeroProps {
   onReadWhitepaper: () => void;
+  onReadExecutiveSummary: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ onReadWhitepaper }) => {
-  const scrollToFoundation = () => {
-    const element = document.getElementById('foundation');
+const Hero: React.FC<HeroProps> = ({ onReadWhitepaper, onReadExecutiveSummary }) => {
+  const scrollToCosmos = () => {
+    const element = document.getElementById('cosmos');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -65,26 +66,35 @@ const Hero: React.FC<HeroProps> = ({ onReadWhitepaper }) => {
         </motion.p>
 
         <motion.div 
-          className="flex flex-col md:flex-row items-center justify-center gap-6 pt-8"
+          className="flex flex-col md:flex-row items-center justify-center gap-4 pt-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
           <button 
-            onClick={scrollToFoundation}
-            className="group relative px-8 py-4 bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-bold font-display uppercase tracking-wider clip-path-polygon transition-all duration-300 shadow-[0_0_20px_rgba(192,38,211,0.4)] hover:shadow-[0_0_30px_rgba(192,38,211,0.6)]"
+            onClick={scrollToCosmos}
+            className="w-full md:w-auto group relative px-8 py-4 bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-bold font-display uppercase tracking-wider clip-path-polygon transition-all duration-300 shadow-[0_0_20px_rgba(192,38,211,0.4)] hover:shadow-[0_0_30px_rgba(192,38,211,0.6)]"
           >
-            <span className="relative z-10 flex items-center gap-2">
+            <span className="relative z-10 flex items-center justify-center gap-2">
               <Play className="w-5 h-5 fill-current" />
-              Enter The Simulation
+              Enter Simulation
             </span>
           </button>
           
           <button 
-            onClick={onReadWhitepaper}
-            className="px-8 py-4 border border-purple-500/50 hover:border-fuchsia-400 text-purple-200 font-display uppercase tracking-wider hover:bg-purple-900/20 transition-all duration-300 backdrop-blur-sm"
+            onClick={onReadExecutiveSummary}
+            className="w-full md:w-auto px-8 py-4 border border-fuchsia-500/50 hover:border-fuchsia-400 text-fuchsia-200 font-display uppercase tracking-wider hover:bg-fuchsia-900/20 transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-2"
           >
-            Read Whitepaper
+            <FileText className="w-4 h-4" />
+            Executive Summary
+          </button>
+
+          <button 
+            onClick={onReadWhitepaper}
+            className="w-full md:w-auto px-8 py-4 border border-purple-500/50 hover:border-purple-400 text-purple-200 font-display uppercase tracking-wider hover:bg-purple-900/20 transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-2"
+          >
+            <BookOpen className="w-4 h-4" />
+            Whitepaper
           </button>
         </motion.div>
 
@@ -95,7 +105,7 @@ const Hero: React.FC<HeroProps> = ({ onReadWhitepaper }) => {
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-purple-400 cursor-pointer"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        onClick={scrollToFoundation}
+        onClick={scrollToCosmos}
       >
         <ChevronDown className="w-8 h-8 opacity-70" />
       </motion.div>

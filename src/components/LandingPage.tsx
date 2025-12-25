@@ -8,16 +8,20 @@ import { SECTIONS } from '../constants';
 
 interface LandingPageProps {
   onReadWhitepaper: () => void;
+  onReadExecutiveSummary: () => void;
 }
 
-const LandingPage: React.FC<LandingPageProps> = ({ onReadWhitepaper }) => {
+const LandingPage: React.FC<LandingPageProps> = ({ onReadWhitepaper, onReadExecutiveSummary }) => {
   return (
     <>
       <Navbar />
 
       <main className="relative z-10">
         
-        <Hero onReadWhitepaper={onReadWhitepaper} />
+        <Hero
+         onReadWhitepaper={onReadWhitepaper}
+         onReadExecutiveSummary={onReadExecutiveSummary}
+          />
 
         {/* Feature Sections */}
         <div className="space-y-12 pb-32">
@@ -72,8 +76,10 @@ const LandingPage: React.FC<LandingPageProps> = ({ onReadWhitepaper }) => {
 
       </main>
 
-      <Footer onReadWhitepaper={onReadWhitepaper} />
-    </>
+      <Footer 
+        onReadWhitepaper={onReadWhitepaper} 
+        onReadExecutiveSummary={onReadExecutiveSummary} 
+      />    </>
   );
 };
 

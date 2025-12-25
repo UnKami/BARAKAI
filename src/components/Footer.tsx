@@ -9,9 +9,10 @@ const XLogo = ({ className }: { className?: string }) => (
 
 interface FooterProps {
   onReadWhitepaper?: () => void;
+  onReadExecutiveSummary?: () => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ onReadWhitepaper }) => {
+const Footer: React.FC<FooterProps> = ({ onReadWhitepaper, onReadExecutiveSummary }) => {
   return (
     <footer className="relative z-10 border-t border-purple-900/30 bg-[#020105] py-16 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
@@ -39,6 +40,12 @@ const Footer: React.FC<FooterProps> = ({ onReadWhitepaper }) => {
         <div className="flex justify-center space-x-6 text-xs text-gray-600 uppercase tracking-widest">
             {/* <a href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-purple-400 transition-colors">Terms of Service</a> */}
+             <button 
+              onClick={onReadExecutiveSummary}
+              className="hover:text-purple-400 transition-colors uppercase"
+            >
+              Executive Summary
+            </button>
             <button 
               onClick={onReadWhitepaper}
               className="hover:text-purple-400 transition-colors uppercase"

@@ -11,16 +11,16 @@ interface FeatureSectionProps {
 const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = false }) => {
   return (
     <section className="relative lg:py-10 px-4 md:px-8 max-w-7xl mx-auto flex flex-col justify-center min-h-[50vh]">
-      
+
       {/* Background Number Watermark */}
       <div className="absolute top-0 md:top-10 left-4 md:left-0 text-[8rem] md:text-[14rem] font-bold font-display text-white opacity-[0.02] select-none pointer-events-none z-0 leading-none">
         0{data.stepNumber}
       </div>
 
       <div className={`relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
-        
+
         {/* Text Content */}
-        <motion.div 
+        <motion.div
           className="flex-1 space-y-8"
           initial={{ opacity: 0, x: isReversed ? 50 : -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -40,7 +40,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = fals
             <h2 className="text-4xl md:text-5xl font-bold font-display text-white leading-tight">
               {data.headline}
             </h2>
-            
+
             <p className="text-lg text-gray-300 leading-relaxed max-w-xl">
               {data.description}
             </p>
@@ -48,7 +48,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = fals
 
           <div className="grid gap-5">
             {data.features.map((feature, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 className="flex items-start p-4 rounded-lg bg-purple-900/25 border border-purple-500/10 hover:bg-purple-900/40 hover:border-purple-500/30 transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = fals
         </motion.div>
 
         {/* Visual Content */}
-        <motion.div 
+        <motion.div
           className="flex-1 w-full"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -82,22 +82,27 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = fals
         >
           <GlowCard intensity="high" noPadding className="w-full aspect-[4/3] md:aspect-video transform hover:scale-[1.25]  transition-transform duration-500">
             <div className="relative w-full h-full overflow-hidden rounded-md group">
-               {/* Image Overlay Gradient */}
+              {/* Image Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f0518] via-transparent to-transparent opacity-60 z-10" />
-              
-              <img 
-                src={data.visualSrc} 
+
+              <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-fuchsia-500 rounded-tl-sm opacity-50 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
+              <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-purple-500 rounded-tr-sm opacity-50 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
+              <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-violet-500 rounded-bl-sm opacity-50 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
+              <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-fuchsia-500 rounded-br-sm opacity-50 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
+
+              <img
+                src={data.visualSrc}
                 alt={data.visualAlt}
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-100 saturate-[0.8] group-hover:saturate-100"
               />
-              
+
               {/* UI Overlay Simulation */}
               <div className="absolute bottom-6 left-6 z-20 flex items-end space-x-2">
-                 <div className="h-1.5 w-16 bg-fuchsia-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(217,70,239,0.5)]" />
-                 <div className="h-1.5 w-6 bg-purple-700 rounded-full" />
-                 <div className="h-1.5 w-6 bg-purple-900 rounded-full" />
+                <div className="h-1.5 w-16 bg-fuchsia-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(217,70,239,0.5)]" />
+                <div className="h-1.5 w-6 bg-purple-700 rounded-full" />
+                <div className="h-1.5 w-6 bg-purple-900 rounded-full" />
               </div>
-              
+
               {/* Corner Tech Decor */}
               <div className="absolute top-4 right-4 z-20">
                 <div className="flex gap-1">

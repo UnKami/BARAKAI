@@ -3,8 +3,9 @@ import BackgroundParticles from './components/BackgroundParticles';
 import LockScreen from './components/LockScreen';
 import LandingPage from './components/LandingPage';
 import Whitepaper from './components/Whitepaper';
+import ExecutiveSummary from './components/ExecutiveSummary';
 
-type View = 'landing' | 'whitepaper';
+type View = 'landing' | 'whitepaper' | 'executive-summary';
 
 const App: React.FC = () => {
   const [isLocked, setIsLocked] = useState(true);
@@ -26,9 +27,14 @@ const App: React.FC = () => {
       <BackgroundParticles />
       
       {currentView === 'landing' ? (
-        <LandingPage onReadWhitepaper={() => setCurrentView('whitepaper')} />
-      ) : (
+        <LandingPage 
+          onReadWhitepaper={() => setCurrentView('whitepaper')} 
+          onReadExecutiveSummary={() => setCurrentView('executive-summary')}
+        />
+      ) : currentView === 'whitepaper' ? (
         <Whitepaper onBack={() => setCurrentView('landing')} />
+      ) : (
+        <ExecutiveSummary onBack={() => setCurrentView('landing')} />
       )}
 
     </div>
