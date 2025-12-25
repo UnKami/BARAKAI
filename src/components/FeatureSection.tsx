@@ -17,7 +17,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = fals
         0{data.stepNumber}
       </div>
 
-      <div className={`relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
+      <div className={`relative z-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-15 ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
 
         {/* Text Content */}
         <motion.div
@@ -60,10 +60,10 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, isReversed = fals
                   {feature.icon}
                 </div>
                 <div>
-                  <h4 className="text-white font-bold font-display text-sm uppercase tracking-wide mb-1">
+                  <h4 className="text-white font-bold font-display text-md uppercase tracking-wide mb-1">
                     {feature.title}
                   </h4>
-                  <p className="text-sm text-gray-400 leading-relaxed">
+                  <p className="text-base text-gray-400 leading-relaxed">
                     {feature.description}
                   </p>
                 </div>

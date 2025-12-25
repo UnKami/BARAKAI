@@ -50,12 +50,12 @@ const ExecutiveSummary: React.FC<ExecutiveSummaryProps> = ({ onBack }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
             <div className="p-5 bg-white/5 border border-white/10 rounded-xl">
               <h4 className="text-fuchsia-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Gaming Industry</h4>
-              <p className="text-3xl font-display font-black text-white tracking-tighter">$187.7B</p>
+              <p className="text-3xl font-display font-black text-white tracking-wide">$187.7B</p>
               <p className="text-gray-500 text-[10px] mt-1 uppercase tracking-widest leading-tight">Annual Revenue. Larger than film & music combined.</p>
             </div>
             <div className="p-5 bg-white/5 border border-white/10 rounded-xl">
               <h4 className="text-purple-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Anime/Webtoon</h4>
-              <p className="text-3xl font-display font-black text-white tracking-tighter">$55B+</p>
+              <p className="text-3xl font-display font-black text-white tracking-wide">$55B+</p>
               <p className="text-gray-500 text-[10px] mt-1 uppercase tracking-widest leading-tight">30% CAGR growth in digital vertical-scroll sectors.</p>
             </div>
           </div>
@@ -229,23 +229,23 @@ const ExecutiveSummary: React.FC<ExecutiveSummaryProps> = ({ onBack }) => {
             <div className="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-4 hover:border-fuchsia-500/30 transition-all">
               <h5 className="text-fuchsia-400 font-display font-black text-base tracking-widest uppercase">I. PREPARE (Base Management & AI Autonomy)</h5>
               <ul className="space-y-3">
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Platform:</span> PC Client (Core Simulation) & Mobile App (Companion/Reader).</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Role:</span> The Master (Player) oversees a Floating Island Base populated by autonomous AI Agents.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Action:</span> Main and Secondary characters operate as fully independent AI Agents. They autonomously utilize training facilities and enter expedition gates to gather resources, driving the growth of the base through their own initiative.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Mobile Synergy:</span> While the heavy strategic gameplay occurs on PC, the mobile app is primarily designed for consuming the Manga. It also serves as a command center for light management, allowing players to check in on their agents' progress from anywhere.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Goal:</span> The agents grow and evolve through their own experiences, driven by a single shared objective: to raise their home—your Base—to glory.</span>
                 </li>
@@ -256,15 +256,15 @@ const ExecutiveSummary: React.FC<ExecutiveSummaryProps> = ({ onBack }) => {
             <div className="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-4 hover:border-purple-500/30 transition-all">
               <h5 className="text-purple-400 font-display font-black text-base tracking-widest uppercase">II. CONQUER (PC Client - The Action)</h5>
               <ul className="space-y-3">
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Role:</span> The Grand Strategist.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Action:</span> Players take their trained MC into the Infinite Tower, a climbable challenge unique to their world's narrative.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Mechanic:</span> The gameplay features an RTS-style combat system where agents face off against enemies autonomously. The player guides them from above, utilizing specialized Master Tools to influence the battle and ensure victory.</span>
                 </li>
@@ -275,15 +275,15 @@ const ExecutiveSummary: React.FC<ExecutiveSummaryProps> = ({ onBack }) => {
             <div className="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-4 hover:border-fuchsia-500/30 transition-all">
               <h5 className="text-fuchsia-400 font-display font-black text-base tracking-widest uppercase">III. REVEAL (The Infinite IP Engine)</h5>
               <ul className="space-y-3">
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Innovation:</span> Seed-Based Narrative Consistency.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Process:</span> The AI acts as an autonomous author, constructing a cohesive narrative arc derived strictly from the user's unique "World Seed." It ensures that every plot twist and character revelation remains consistent with the established history and lore of that specific universe, creating a professional-grade story structure rather than random events.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Result:</span> Clearing a floor generates a new Manga Chapter, gradually unraveling the Main Character's past and true strength. This creates a strong loop that ties gameplay progression directly to story progression.</span>
                 </li>
@@ -294,23 +294,23 @@ const ExecutiveSummary: React.FC<ExecutiveSummaryProps> = ({ onBack }) => {
             <div className="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-4 hover:border-purple-500/30 transition-all">
               <h5 className="text-purple-400 font-display font-black text-base tracking-widest uppercase">IV. MONETIZE (The Economy - The Value)</h5>
               <ul className="space-y-3">
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">The Liquidity:</span> The ecosystem turns the Master-Agent bond into tangible value enabled by blockchain technology.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">Trade:</span> Buy and sell specialized gear and Agents on the open market.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-sm">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">Publish:</span> List the unique Manga in the public library. Earn royalties when other players pay to read your hero's story.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 text-xs md:text-sm leading-relaxed">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">Rent:</span> Lease upgraded Base facilities or high-level Agents to other players, generating passive income from their progression.</span>
                 </li>
-                <li className="flex gap-3 text-gray-300 text-xs md:text-sm leading-relaxed">
+                <li className="flex gap-3 text-gray-300 leading-relaxed text-xs md:text-base">
                   <div className="mt-1.5 shrink-0"><div className="w-1.5 h-1.5 bg-purple-500 rounded-full" /></div>
                   <span><span className="text-white font-bold">Exit:</span> Bundle the Character, the Base, and the Manga into a single "Liquid IP Asset" for a high-value exit.</span>
                 </li>
@@ -348,7 +348,7 @@ const ExecutiveSummary: React.FC<ExecutiveSummaryProps> = ({ onBack }) => {
                       className={`w-24 h-24 rounded-2xl bg-[#05020a] border-2 border-${node.color}-500/30 flex flex-col items-center justify-center gap-1.5 shadow-[0_0_20px_rgba(0,0,0,0.8)] hover:scale-105 transition-transform`}
                     >
                       <div className={`text-${node.color}-400`}>{node.icon}</div>
-                      <span className="text-[9px] font-black tracking-widest text-white uppercase">{node.label}</span>
+                      <span className="text-[12px] font-black tracking-widest text-white uppercase">{node.label}</span>
                     </motion.div>
                   </motion.div>
                 );

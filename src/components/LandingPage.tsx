@@ -57,7 +57,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onReadWhitepaper, onReadExecu
             </p>
 
             {/* <div className="inline-flex flex-col  lg:w-[84%] items-center justify-center px-12 py-6 border border-dashed border-purple-500/30 bg-purple-900/10 rounded-lg backdrop-blur-sm"> */}
-            <div className="inline-flex flex-col items-center justify-center px-12 py-6 border border-dashed border-purple-500/30 bg-purple-900/10 rounded-lg backdrop-blur-sm">
+            <div className="inline-flex flex-col w-full items-center justify-center px-12 py-6 border border-dashed border-purple-500/30 bg-purple-900/10 rounded-lg backdrop-blur-sm">
               <span className="text-fuchsia-400 font-display font-bold tracking-[0.2em] text-lg uppercase animate-pulse">
                 Game Trailer Coming Soon
               </span>
